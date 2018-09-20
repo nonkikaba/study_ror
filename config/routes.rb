@@ -109,15 +109,6 @@ Rails.application.routes.draw do
   # root to: 'books#index'
 
 
-  # 第2章
-  get 'hello/index', to: 'hello#index'
-  get 'hoge/piyo', to: 'hello#index'
-  get 'hello/index'
-  get 'hello/view'
-  get 'hello/nothing'
-  get 'hello/app_var'
-  get 'hello/list'
-
   # 第4章
   get 'view/keyword'
   post 'keyword/search'
