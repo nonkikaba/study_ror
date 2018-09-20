@@ -1,0 +1,30 @@
+<%= form_for(@book) do |f| %>
+  textbox: <br>
+  <%= f.text_field :isbn, size: 20, maxlength: 25, readonly: true %><br/>
+<%# readonlyは編集できない %>
+  passwordbox: <br>
+  <%= f.password_field :isbn, size: 10, maxlength: 15, disabled: true %><br/>
+<%# disabled: true　はフィールドを選択できない %>
+
+  textarea: <br>
+  <%= f.text_area :isbn, cols: 40, rows: 10 %><br>
+
+  radiobutton: <br>
+  <label><%= f.radio_button :publish, '技術評論社', class: :rd %>技術評論社</label>
+  <%# 技術評論社はvalue値。 id=book_publish_技術評論社  %>
+  <label><%= f.radio_button :publish, '翔泳社', class: :rd %>翔泳社</label>
+  <label><%= f.radio_button :publish, '日経', class: :rd %>日経</label>
+  
+  <br>
+
+  checkbox: <br>
+  <label><%= f.check_box :dl, { class: 'chk' }, 'yes', 'no' %>ダウンロードサンプルあり？</label>
+  <br>
+
+  filebox: <br>
+  <%= f.file_field :isbn, size: 10, maxlength: 15 %> <br>
+  
+  hidden: <br>
+  <%= f.hidden_field :isbn %>
+  <br>
+<% end %>
