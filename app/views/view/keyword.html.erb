@@ -1,5 +1,6 @@
 <%= form_tag({ controller: :keyword, action: :search },
 id: :fm, class: :search) do %>
+<%# class名をシンボルで定義しているが通常通り呼び出せる %>
 
 <label for="keyword">検索キーワード</label>
 <%= text_field_tag :keywd, '', size: 30 %>
