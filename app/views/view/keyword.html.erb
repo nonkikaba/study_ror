@@ -1,0 +1,9 @@
+<%= form_tag({ controller: :keyword, action: :search },
+id: :fm, class: :search) do %>
+
+<label for="keyword">検索キーワード</label>
+<%= text_field_tag :keywd, '', size: 30 %>
+<!-- 上の　'' はvalue値。 keywdはname値 -->
+<%= submit_tag '検索' %>
+
+<% end %>
