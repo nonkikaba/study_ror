@@ -142,6 +142,7 @@ Rails.application.routes.draw do
   get 'members/login'
   get 'view/linkif'
   get 'login/info'
+  get 'login/index'
   get 'view/current'
   get 'view/detail'
   get 'view/mailto'
