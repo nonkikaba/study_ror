@@ -45,4 +45,8 @@ class ViewController < ApplicationController
   def adopt
     render layout: 'sub'
   end
+
+  def multi
+    render layout: 'layout'
+  end
 end
