@@ -1,4 +1,11 @@
+<!--
 <div id="info">
   <%#= render 'books/book', book: @book, type: :details %>
   <%= render @book, type: :details %>
+</div>
+-->
+
+<!--パーシャルレイアウト使用-->
+<div id="info">
+  <%= render partial: 'books/book', layout: 'books/frame', locals: { book: @book, type: :simple} %>
 </div>
